@@ -1,0 +1,76 @@
+
+/* Heads up Display*/
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#question, #score {
+    font-size: 3rem;
+}
+/*Question progression bar*/
+#progress-bar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
+
+
+
+/* Chice container */
+.choice-container {
+    color: #000;
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 3rem;
+    min-width: 80rem;
+
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transition: transform 100ms;
+    transform: scale(1.02);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgba(41, 232, 111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 1) 0%, rgba(224, 11, 11, 1) 100%);
+}
+
+
