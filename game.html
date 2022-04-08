@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="quiz, html quiz, css quiz, web quiz, web development, portfolio project, code institute portfolio project ">
+    <meta name="description" content="quiz game to test the knowlwdge of HTML and CSS">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <header id="hud">
+                <div class="hud-item">
+                    <p id="progress-text" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progress-bar">
+                        <div id="progress-bar-full"></div>
+                    </div>
+                </div>
+               
+                <div class="hud-item">
+                    <p class="hud-prefix">Score</p>
+                    <p class="hud-main-text" id="score">0</p>
+                </div>
+            </header>
+            <div id="question">What is the Answer to this question</div>
+            <section id="choice">
+                <div class="choice-container">
+                    <p class="choice-prefix">A.</p>
+                    <p class="choice-text" data-number="1">choice 1</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B.</p>
+                    <p class="choice-text" data-number="2">choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C.</p>
+                    <p class="choice-text" data-number="3">choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D.</p>
+                    <p class="choice-text" data-number="4">choice 4</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
