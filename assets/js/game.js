@@ -38,6 +38,8 @@ let questionIndex;
 let score;
 let questionCounter;
 let availableQuestions = [];
+const maxNumOfQuestion = 4;
+
 
 /**Main quiz function. Initializes input parameters and triggers the runQuiz function*/
 function startQuiz() {
@@ -49,7 +51,23 @@ function startQuiz() {
 }
 
 /**Function to handles the running of the game */
-function runQuiz() {}
+function runQuiz() {
+    questionCounter++;
+    if (questionCounter <= maxNumOfQuestion){
+
+        displayQuizProgress()
+
+        getRandomQuestion()
+
+        acceptingAnswers = true;
+
+        makeChoice()
+
+    } else {
+        //Returns a new window
+        //Syntax from w3school tutorial [https://www.w3schools.com/jsref/obj_location.asp]
+        return window.location.assign('save-score.html')}
+}
 
 /**Function to display quiz progression*/
 function displayQuizProgress(){
