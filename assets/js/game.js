@@ -71,11 +71,32 @@ function runQuiz() {
 
 /**Function to display quiz progression*/
 function displayQuizProgress(){
+    const progressText = document.querySelector('#progress-text');    
+    const progressBarFull = document.querySelector('#progress-bar-full');
+    
+    progressText.innerText = `Question ${questionCounter} of ${maxNumOfQuestion}`
+    progressBarFull.style.width = `${(questionCounter/maxNumOfQuestion)*100}%`
 }
 
 
 /**Function to pick question at random from the question's bank*/
 function getRandomQuestion () {
+    let question = document.querySelector('#question')
+    const choices = Array.from(document.querySelectorAll('.choice-text'));
+    
+    // Generate random number to pick question at random
+    questionIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionIndex]
+    question.innerText = currentQuestion.question
+    
+    //Assign chosen question's choice as the choice inner
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+    
+    //Remove the answered question from the question bank
+    availableQuestions.splice(questionIndex, 1);
 }
 
 /**Function to handle player's choice */
