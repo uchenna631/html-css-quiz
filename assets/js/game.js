@@ -132,6 +132,10 @@ function makeChoice(){
  * and sets the most recent score to the local storage
  */
 function incrementScore(num) {
-     }
+    const scoreText = document.querySelector('#score');
+    score += num
+    localStorage.setItem('mostRecentScore', score)
+    scoreText.innerText = score
+}
 
 startQuiz()
