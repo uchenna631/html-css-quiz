@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="quiz, html quiz, css quiz, web quiz, web development, portfolio project, code institute portfolio project ">
+    <meta name="description" content="quiz game to test the knowlwdge of HTML and CSS">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-column flex-center">
+            <p id="final-score">0</p>
+            <form  class="end-form-container">
+                <p id="end-text">Enter your name below to save your score!</p>
+                <input type="text" name="name" placeholder="Enter your name" id="username">
+                <button class="btn" id="save-score-btn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="game.html" class="btn">Play Again</a>
+            <a href="index.html" class="btn">Go Home</a>
+        </div>
+    </div>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
