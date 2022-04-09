@@ -67,7 +67,7 @@ function runQuiz() {
     } else {
         //Returns a new window
         //Syntax from w3school tutorial [https://www.w3schools.com/jsref/obj_location.asp]
-        return window.location.assign('save-score.html')}
+        return window.location.assign('form.html')}
 }
 
 /**Function to display quiz progression*/
