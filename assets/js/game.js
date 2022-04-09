@@ -39,6 +39,7 @@ let score;
 let questionCounter;
 let availableQuestions = [];
 const maxNumOfQuestion = 4;
+const scorePoints = 100;
 
 
 /**Main quiz function. Initializes input parameters and triggers the runQuiz function*/
@@ -100,7 +101,30 @@ function getRandomQuestion () {
 }
 
 /**Function to handle player's choice */
+//Adapted from youtube tutorial [https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=281s]
 function makeChoice(){
+    const choices = Array.from(document.querySelectorAll('.choice-text'));
+    choices.forEach(choice => {
+        choice.addEventListener('click', e => {
+            if(!acceptingAnswers) return 
+            acceptingAnswers = false
+            const selectedChoice = e.target;
+            const selectedAnswer = selectedChoice.innerText
+
+            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+            if(classToApply === 'correct') {
+                incrementScore(scorePoints)
+            }
+
+            selectedChoice.parentElement.classList.add(classToApply);
+
+            setTimeout(()=> {
+                selectedChoice.parentElement.classList.remove(classToApply);
+                runQuiz();
+            }, 500)
+            })
+        })
 }
 
 /**
