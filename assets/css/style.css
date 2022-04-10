@@ -73,3 +73,38 @@ h1 {
 #highscore-btn:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 255, 0, 0.5);
 }
+
+/*Form css */
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5em;
+    font-size: 1.8rem;
+    border: 1px solid #000;
+}
+
+
+input::placeholder {
+    color: #ccc;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#form-text {
+    font-size: 2.4rem;
+    color: #191919;
+    text-align: center;
+}
