@@ -108,3 +108,7 @@ input::placeholder {
     color: #191919;
     text-align: center;
 }
+
+#final-score {
+    font-size: 3rem;
+}
