@@ -112,3 +112,15 @@ input::placeholder {
 #final-score {
     font-size: 3rem;
 }
+
+/*High scores css*/
+
+#high-scores-list {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
