@@ -73,4 +73,48 @@
     background: linear-gradient(32deg, rgba(230, 29, 1) 0%, rgba(224, 11, 11, 1) 100%);
 }
 
+/*Media Query*/
 
+@media screen and (max-width: 1200px) {
+    .choice-container {
+        min-width: 40rem;       
+    }
+
+    .choice-text{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 30rem;       
+    }
+
+    .choice-text{
+        width: 80%;
+    }
+    #progress-text {
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    #progress-bar-full {
+        width: 80%;
+        
+    }
+
+    #question {
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+
+    #score, #score-text {
+        padding-right: 10px;
+
+    }
+
+    #score {
+        font-size: 2rem;
+    }
+}
