@@ -86,12 +86,18 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .hud-item {
+        
+        max-width: 25%;
+    }
+
     .choice-container {
-        min-width: 30rem;       
+        min-width: 25rem;       
     }
 
     .choice-text{
-        width: 80%;
+        width: 75%;
     }
     #progress-text {
         padding-left: 10px;
