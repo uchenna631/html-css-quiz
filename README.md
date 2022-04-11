@@ -5,6 +5,7 @@
 This is an HTML and CSS multiple choice quiz game to showcase the knowledge and use of HTML, CSS and JavaScript. This was designed as Code Institute's Portfolio Project II in partial fulfillment for the award of Diploma in Software Development.
 
 <h2 align="center">Ami-responsive design </h2>
+![Responsive Mockup](https://github.com/uchenna631/html-css-quiz/blob/main/assets/images/ami-home-page.png?raw=true)
 
 ## User Experience (UX)
 
