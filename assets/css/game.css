@@ -16,9 +16,14 @@
     text-align: center;
 }
 
-#question, #score {
-    font-size: 3rem;
+#score{
+    font-size: 2.5rem;
 }
+
+#question {
+    font-size: 2rem;
+}
+
 /*Question progression bar*/
 #progress-bar {
     width: 20rem;
@@ -80,38 +85,58 @@
         min-width: 40rem;       
     }
 
+    #question {
+        font-size: 2rem;
+    }
+
     .choice-text{
         width: 95%;
+        font-size: 1.5rem;
     }
+
+    .hud-prefix{
+        font-size: 1.5rem;
+    }
+
+    #hud {
+        margin-top: 40px;
+    }
+
+    #progress-bar {
+        width: 15rem;
+    }
+
+    #score, #question {
+        font-size: 2rem;}
 }
 
 @media screen and (max-width: 768px) {
 
     .hud-item {
-        
         max-width: 25%;
     }
 
     .choice-container {
-        min-width: 25rem;       
+        min-width: 25rem;
+        max-width: 32rem;       
     }
 
-    .choice-text{
-        width: 75%;
+    .choice-text {
+        max-width: 25rem;
+        font-size: 1.5rem;
+        padding: 10px;
     }
+
     #progress-text {
         padding-left: 10px;
         text-align: left;
-    }
-
-    #progress-bar-full {
-        width: 80%;
-        
+        font-size: 1rem;
     }
 
     #question {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 10px;
+        max-width: 300px;
     }
 
 
@@ -122,5 +147,10 @@
 
     #score {
         font-size: 2rem;
+    }
+
+    .choice-prefix{
+        padding: 10px;
+        font-size: 1.5rem;
     }
 }
