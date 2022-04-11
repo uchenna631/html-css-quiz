@@ -1,36 +1,95 @@
 // Question bank
 let questions = [{
-    question: 'what is 2 + 1',
-    choice1: '5',
-    choice2: '4',
-    choice3: '3',
-    choice4: '21',
-    answer: 3
+    question: 'what does HTML stand for?',
+    choice1: 'Hyper Text Markup Language',
+    choice2: 'Home Tool Markup Language',
+    choice3: 'Hyperlinks and Text Markup Language',
+    choice4: 'Hyper Text Machine Language',
+    answer: 'Hyper Text Markup Language'
 },
 {
-    question: 'what is 2 + 2',
-       choice1: '5',
-       choice2: '4',
-       choice3: '9',
-       choice4: '21',
-       answer: 4
-   },
-   {
-    question: 'what is 2 + 3',
-       choice1: '5' ,
-       choice2: '4',
-       choice3: '35',
-       choice4: '21',
-       answer: 5
-   },
-   {
-    question: 'what is 2 + 4',
-       choice1: '5',
-       choice2: '4',
-       choice3: '6',
-       choice4: '21',
-       answer: 6
-   }
+question: 'who is making the Web Standard?',
+    choice1: 'Mozilla',
+    choice2: 'Google',
+    choice3: 'The World Wide Web Consortium',
+    choice4: 'Microsoft',
+    answer: 'The World Wide Web Consortium'
+},
+{
+question: 'Choose the correct HTML element for the largest heading:',
+    choice1: '<heading>',
+    choice2: '<head>',
+    choice3: '<h6>',
+    choice4: '<h1>',
+    answer: '<h1>'
+},
+{
+question: 'What is the correct HTML element for inserting a line break?',
+    choice1: '<break>',
+    choice2: '<lb>',
+    choice3: '<br>',
+    choice4: '<bk>',
+    answer: '<br>'
+},
+
+{
+question: 'Choose the correct HTML element to define important text:',
+    choice1: '<b >',
+    choice2: '<i>',
+    choice3: '<strong>',
+    choice4: '<important>',
+    answer: '<strong>'
+},
+{
+question: 'Choose the correct HTML element to define emphasized text:',
+    choice1: '<i >',
+    choice2: '<em>',
+    choice3: '<emphasis>',
+    choice4: '<italic>',
+    answer: '<em>'
+},
+{
+question: 'What does CSS stand for?',
+    choice1: 'Creative Style Sheets',
+    choice2: '<Computer Style Sheets>',
+    choice3: '<Cascading Style Sheets>',
+    choice4: '<Colorful Style Sheet>',
+    answer: '<Cascading Style Sheets>'
+},
+
+{
+question: 'Which HTML tag is used to define an internal style sheet?',
+    choice1: '<css>',
+    choice2: '<stylesheet>',
+    choice3: '<script>',
+    choice4: '<style>',
+    answer: '<style>'
+}, 
+{
+question: 'Which HTML tag is used to define inline styles?',
+    choice1:'<class>',
+    choice2: '<stylesheet>',
+    choice3: '<styles>',
+    choice4: '<style>',
+    answer: '<style>'
+},
+{
+question: 'Which is the correct CSS syntax?',
+    choice1: 'body {color: black;}',
+    choice2: '{body:color=black}',
+    choice3: '{body;color:black}',
+    choice4: 'body.color=black',
+    answer: 'body {color: black;}'
+},
+{
+question: 'How do you insert a comment in a CSS file?',
+    choice1: '/*this is a comment*/',
+    choice2: '//this is a comment// ',
+    choice3: '//this is a comment ',
+    choice4: '**this is a comment',
+    answer: '/*this is a comment*/'
+}
+
 ];
 
 //Declarations
@@ -38,8 +97,8 @@ let questionIndex;
 let score;
 let questionCounter;
 let availableQuestions = [];
-const maxNumOfQuestion = 4;
-const scorePoints = 100;
+const maxNumOfQuestion = 10;
+const scorePoints = 10;
 
 
 /**Main quiz function. Initializes input parameters and triggers the runQuiz function*/
